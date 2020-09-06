@@ -55,6 +55,27 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set number |
     \ set fileformat=unix
+"For cpp files
+au BufNewFile,BufRead *.cpp
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set tags+=~/.vim/tags/cpp |
+    \ set shiftwidth=2 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set number |
+    \ set fileformat=unix
+au BufNewFile,BufRead *.h
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set tags+=~/.vim/tags/cpp
+    \ set shiftwidth=2 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set number |
+    \ set fileformat=unix
 
 set encoding=utf-8
 let python_highlight_all=1
